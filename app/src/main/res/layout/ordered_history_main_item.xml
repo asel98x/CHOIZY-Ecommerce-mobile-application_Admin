@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/box_view">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ordered ID - "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_id"
+            android:text="Ordered ID"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="105dp"/>
+
+    <TextView
+        android:id="@+id/ordr_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_id"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text="title"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ordr_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_id"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:text="date"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

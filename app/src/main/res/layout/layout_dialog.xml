@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/catgr_pic"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_category"
+        app:civ_border_color="@color/blue"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
+        android:hint="@string/category_name"
+        android:inputType="textPersonName"
+        android:paddingStart="25dp" />
+
+    <EditText
+        android:id="@+id/category_color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="215dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
+        android:hint="@string/category_colour"
+        android:inputType="textPersonName"
+        android:paddingStart="25dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/category_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_color"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/submit"
+        app:cornerRadius="5dp" />
+</RelativeLayout>

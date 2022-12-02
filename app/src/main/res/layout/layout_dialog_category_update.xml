@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/category_name_update_txt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="@string/category_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_category">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_name_update_txt"
+        android:layout_marginTop="13dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_name_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"
+            android:shadowRadius="@integer/material_motion_duration_long_1"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/category_name_submit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.45" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/ad_add"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/baseline_business" />
+
+    <EditText
+        android:id="@+id/ad_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        android:paddingStart="25dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ad_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_add"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/submit"
+        app:cornerRadius="5dp" />
+</RelativeLayout>

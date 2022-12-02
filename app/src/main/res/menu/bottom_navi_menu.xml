@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_student"
+        android:title="@string/student"
+        android:icon="@drawable/baseline_dashboard"
+        app:cnb_backgroundColor="@color/pri"
+        app:cnb_textColor="@color/blue"
+        app:cnb_iconColor="@color/blue"/>
+
+    <item
+        android:id="@+id/bottom_nav_company"
+        android:title="@string/company"
+        android:icon="@drawable/baseline_business"
+        app:cnb_backgroundColor="@color/pri"
+        app:cnb_textColor="@color/blue"
+        app:cnb_iconColor="@color/blue"/>
+
+    <item
+        android:id="@+id/bottom_nav_ads"
+        android:title="@string/ads"
+        android:icon="@drawable/ic_baseline_ad_units"
+        app:cnb_backgroundColor="@color/pri"
+        app:cnb_textColor="@color/blue"
+        app:cnb_iconColor="@color/blue"/>
+
+    <item
+        android:id="@+id/bottom_nav_admin"
+        android:title="@string/admin"
+        android:icon="@drawable/baseline_admin_panel"
+        app:cnb_backgroundColor="@color/pri"
+        app:cnb_textColor="@color/blue"
+        app:cnb_iconColor="@color/blue"/>
+
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/baseline_supervised_user_circle"
+        app:cnb_backgroundColor="@color/pri"
+        app:cnb_textColor="@color/blue"
+        app:cnb_iconColor="@color/blue"/>
+
+</menu>
